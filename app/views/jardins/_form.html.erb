@@ -20,6 +20,14 @@
     <%= f.text_field :direccion %>
   </div>
   <div class="field">
+    <%= f.label :latitud %><br />
+    <%= f.text_field :latitud %>
+  </div>
+  <div class="field">
+    <%= f.label :longitud %><br />
+    <%= f.text_field :longitud %>
+  </div>
+  <div class="field">
     <%= f.label :telefono %><br />
     <%= f.text_field :telefono %>
   </div>
@@ -70,14 +78,6 @@
   <div class="field">
     <%= f.label :vacantes %><br />
     <%= f.text_field :vacantes %>
-  </div>
-  <div class="field">
-    <%= f.label :latitud %><br />
-    <%= f.text_field :latitud %>
-  </div>
-  <div class="field">
-    <%= f.label :longitud %><br />
-    <%= f.text_field :longitud %>
   </div>
   <div class="actions">
     <%= f.submit %>
