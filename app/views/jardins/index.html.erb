@@ -1,0 +1,55 @@
+<h1>Listing jardins</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Direccion</th>
+    <th>Telefono</th>
+    <th>Web</th>
+    <th>Email</th>
+    <th>Capacidad</th>
+    <th>Camaras</th>
+    <th>Ninos x tia</th>
+    <th>Matricula</th>
+    <th>Mensualidad</th>
+    <th>Sistema educativo</th>
+    <th>Edad entrada</th>
+    <th>Edad salida</th>
+    <th>Horario</th>
+    <th>Vacantes</th>
+    <th>Latitud</th>
+    <th>Longitud</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jardins.each do |jardin| %>
+  <tr>
+    <td><%= jardin.nombre %></td>
+    <td><%= jardin.direccion %></td>
+    <td><%= jardin.telefono %></td>
+    <td><%= jardin.web %></td>
+    <td><%= jardin.email %></td>
+    <td><%= jardin.capacidad %></td>
+    <td><%= jardin.camaras %></td>
+    <td><%= jardin.ninos_x_tia %></td>
+    <td><%= jardin.matricula %></td>
+    <td><%= jardin.mensualidad %></td>
+    <td><%= jardin.sistema_educativo %></td>
+    <td><%= jardin.edad_entrada %></td>
+    <td><%= jardin.edad_salida %></td>
+    <td><%= jardin.horario %></td>
+    <td><%= jardin.vacantes %></td>
+    <td><%= jardin.latitud %></td>
+    <td><%= jardin.longitud %></td>
+    <td><%= link_to 'Show', jardin %></td>
+    <td><%= link_to 'Edit', edit_jardin_path(jardin) %></td>
+    <td><%= link_to 'Destroy', jardin, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jardin', new_jardin_path %>

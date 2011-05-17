@@ -1,0 +1,85 @@
+<%= form_for(@jardin) do |f| %>
+  <% if @jardin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jardin.errors.count, "error") %> prohibited this jardin from being saved:</h2>
+
+      <ul>
+      <% @jardin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :web %><br />
+    <%= f.text_field :web %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :capacidad %><br />
+    <%= f.text_field :capacidad %>
+  </div>
+  <div class="field">
+    <%= f.label :camaras %><br />
+    <%= f.text_field :camaras %>
+  </div>
+  <div class="field">
+    <%= f.label :ninos_x_tia %><br />
+    <%= f.text_field :ninos_x_tia %>
+  </div>
+  <div class="field">
+    <%= f.label :matricula %><br />
+    <%= f.text_field :matricula %>
+  </div>
+  <div class="field">
+    <%= f.label :mensualidad %><br />
+    <%= f.text_field :mensualidad %>
+  </div>
+  <div class="field">
+    <%= f.label :sistema_educativo %><br />
+    <%= f.text_field :sistema_educativo %>
+  </div>
+  <div class="field">
+    <%= f.label :edad_entrada %><br />
+    <%= f.text_field :edad_entrada %>
+  </div>
+  <div class="field">
+    <%= f.label :edad_salida %><br />
+    <%= f.text_field :edad_salida %>
+  </div>
+  <div class="field">
+    <%= f.label :horario %><br />
+    <%= f.text_field :horario %>
+  </div>
+  <div class="field">
+    <%= f.label :vacantes %><br />
+    <%= f.text_field :vacantes %>
+  </div>
+  <div class="field">
+    <%= f.label :latitud %><br />
+    <%= f.text_field :latitud %>
+  </div>
+  <div class="field">
+    <%= f.label :longitud %><br />
+    <%= f.text_field :longitud %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

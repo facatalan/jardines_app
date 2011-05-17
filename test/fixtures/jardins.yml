@@ -1,0 +1,39 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  direccion: MyString
+  telefono: MyString
+  web: MyString
+  email: MyString
+  capacidad: 1
+  camaras: 1
+  ninos_x_tia: 1.5
+  matricula: 1
+  mensualidad: 1
+  sistema_educativo: MyString
+  edad_entrada: MyString
+  edad_salida: MyString
+  horario: MyString
+  vacantes: 1
+  latitud: 1.5
+  longitud: 1.5
+
+two:
+  nombre: MyString
+  direccion: MyString
+  telefono: MyString
+  web: MyString
+  email: MyString
+  capacidad: 1
+  camaras: 1
+  ninos_x_tia: 1.5
+  matricula: 1
+  mensualidad: 1
+  sistema_educativo: MyString
+  edad_entrada: MyString
+  edad_salida: MyString
+  horario: MyString
+  vacantes: 1
+  latitud: 1.5
+  longitud: 1.5
