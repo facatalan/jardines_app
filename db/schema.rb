@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110517221353) do
+ActiveRecord::Schema.define(:version => 20110517223143) do
 
   create_table "jardins", :force => true do |t|
     t.string   "nombre"
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(:version => 20110517221353) do
     t.string   "edad_salida"
     t.string   "horario"
     t.integer  "vacantes"
-    t.float    "latitud"
-    t.float    "longitud"
+    t.decimal  "latitud",           :precision => 15, :scale => 10
+    t.decimal  "longitud",          :precision => 15, :scale => 10
     t.datetime "created_at"
     t.datetime "updated_at"
   end

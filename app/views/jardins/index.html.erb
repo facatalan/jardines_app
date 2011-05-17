@@ -4,6 +4,8 @@
   <tr>
     <th>Nombre</th>
     <th>Direccion</th>
+    <th>Latitud</th>
+    <th>Longitud</th>
     <th>Telefono</th>
     <th>Web</th>
     <th>Email</th>
@@ -17,8 +19,6 @@
     <th>Edad salida</th>
     <th>Horario</th>
     <th>Vacantes</th>
-    <th>Latitud</th>
-    <th>Longitud</th>
     <th></th>
     <th></th>
     <th></th>
@@ -28,6 +28,8 @@
   <tr>
     <td><%= jardin.nombre %></td>
     <td><%= jardin.direccion %></td>
+    <td><%= jardin.latitud %></td>
+    <td><%= jardin.longitud %></td>
     <td><%= jardin.telefono %></td>
     <td><%= jardin.web %></td>
     <td><%= jardin.email %></td>
@@ -41,8 +43,6 @@
     <td><%= jardin.edad_salida %></td>
     <td><%= jardin.horario %></td>
     <td><%= jardin.vacantes %></td>
-    <td><%= jardin.latitud %></td>
-    <td><%= jardin.longitud %></td>
     <td><%= link_to 'Show', jardin %></td>
     <td><%= link_to 'Edit', edit_jardin_path(jardin) %></td>
     <td><%= link_to 'Destroy', jardin, :confirm => 'Are you sure?', :method => :delete %></td>
