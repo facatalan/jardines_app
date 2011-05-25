@@ -1,0 +1,27 @@
+{
+	"j1": {
+		"html": "<b>Nombre:</b> MI INFANCIA <br/><b>Direccion</b>: Avenida Alcalde Eduardo Castillo Velasco, 3047 <br/><b>Telefono</b>: (2) 2252977",
+		"lat" : "-33.45907111",
+		"lon" : "-70.5994491"
+	},
+	"j2": {
+		"html": "<b>Nombre:</b> AEDO ZAMORANO PATRICIO <br/><b>Dirección</b>: Calle Zañartu, 2548 <br/><b>Teléfono</b>: (2) 2387067",
+		"lat" : "-33.47208189",
+		"lon" : "-70.60587549"
+	},
+	"j3": {
+		"html": "<b>Nombre:</b> JARDÍN INFANTIL HORAS ALEGRES <br/><b>Dirección</b>: Calle Hermanos Cabot, 7211<br/><b>Teléfono</b>: (2) 2200290",
+		"lat" : "-33.39504414",
+		"lon" : "-70.55973433"
+	},
+	"j4": {
+		"html": "<b>Nombre:</b> ALTAHUEÑI MONTESSORI JARDIN INFANTIL <br/><b>Dirección</b>: Calle Hernán Cortés, 2994 <br/><b>Teléfono</b>:     (2) 2051022",
+		"lat" : "-33.44634457",
+		"lon" : "-70.59973933"
+	},
+	"j5": {
+		"html": "<b>Nombre:</b> LA CASA DEL BAMBINI <br/><b>Dirección</b>: Calle Austria, 2121 <br/><b>Teléfono</b>: (2) 7279361",
+		"lat" : "-33.43494978",
+		"lon" : "-70.60614897"
+	}
+}

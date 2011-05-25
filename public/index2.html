@@ -14,24 +14,15 @@
 	<script>
 	$(function()
 	{		
+		$("#map_canvas").gMap({	latitude: -33.461,
+								longitude:-70.636,
+								zoom: 11
+								});
 
-		$.jardines = [];
-		//alert($.jardines);
-		
-		$.getJSON('/jardins/mapSearch?SWLat=-33.6043258339826&NELat=-33.31790588151775&SWLng=-70.80757141113281&NELng=-70.46424865722656', function(data) {
-			$.each(data, function(key,val) {
-			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: "<b>Nombre: </b>"+val.jardin.nombre+"<br/><b>Dirección: </b>"+val.jardin.direccion});
-			});
-			$("#map_canvas").gMap({	latitude: -33.461,
-									longitude:-70.636,
-									markers: $.jardines,
-									zoom: 11
-									});
-									
-			GEvent.addListener($.gmap2,"dragend", $("#map_canvas").actualizarMapa);
-			GEvent.addListener($.gmap2,"zoomend", $("#map_canvas").actualizarMapa);
+		GEvent.addListener($.gmap2,"tilesloaded", $("#map_canvas").actualizarMapa);
+		GEvent.addListener($.gmap2,"dragend", $("#map_canvas").actualizarMapa);
+		GEvent.addListener($.gmap2,"zoomend", $("#map_canvas").actualizarMapa);
 
-		});
 	});
 	</script>
   </head>

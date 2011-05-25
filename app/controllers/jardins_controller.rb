@@ -10,6 +10,18 @@ class JardinsController < ApplicationController
     end
   end
 
+  # GET /jardins/mapSearch
+  # GET /jardins/mapSearch.xml
+  def mapSearch
+    @jardins = Jardin.where("(latitud between ? and ?) and (longitud between ? and ?)",params[:SWLat].to_f, params[:NELat].to_f, params[:SWLng].to_f, params[:NELng].to_f)
+    #@post = params
+    render :json => @jardins.to_json(:only => [ :id , :nombre, :direccion, :telefono, :latitud, :longitud])
+    #respond_to do |format|
+    #  format.html # mapSearch.html.erb
+    #  format.xml  { render :xml => @jardins }
+    #end
+  end
+
   # GET /jardins/1
   # GET /jardins/1.xml
   def show

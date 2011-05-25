@@ -1,4 +1,5 @@
 JardinesApp::Application.routes.draw do
+  get "jardins/mapSearch"
   resources :jardins
 
   # The priority is based upon order of creation:
