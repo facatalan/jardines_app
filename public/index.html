@@ -20,7 +20,17 @@
 		
 		$.getJSON('/jardins/mapSearch?SWLat=-33.6043258339826&NELat=-33.31790588151775&SWLng=-70.80757141113281&NELng=-70.46424865722656', function(data) {
 			$.each(data, function(key,val) {
-			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: "<b>Nombre: </b>"+val.jardin.nombre+"<br/><b>Dirección: </b>"+val.jardin.direccion});
+			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: "<b>Nombre: </b>"+val.jardin.nombre+"<br/><b>Dirección: </b>"+val.jardin.direccion, 
+				icon:
+				    {
+				        image:              "images/puntoJardin.png",
+				        shadow:             false,
+				        iconsize:           [9, 9],
+				        shadowsize:         false,
+				        iconanchor:         [4, 5],
+				        infowindowanchor:   [4, 5]
+				    }
+				});
 			});
 			$("#map_canvas").gMap({	latitude: -33.461,
 									longitude:-70.636,

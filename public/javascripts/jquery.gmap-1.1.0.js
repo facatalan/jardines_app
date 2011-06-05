@@ -186,7 +186,17 @@
 		var NE=mapBounds.getNorthEast();
 		$.getJSON('/jardins/mapSearch?SWLat='+SW.lat()+'&NELat='+NE.lat()+'&SWLng='+SW.lng()+'&NELng='+NE.lng(), function(data) {
 			$.each(data, function(key,val) {
-			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: val.jardin.nombre });
+			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: "<b>Nombre: </b>"+val.jardin.nombre+"<br/><b>Dirección: </b>"+val.jardin.direccion, 
+				icon:
+				    {
+				        image:              "images/puntoJardin.png",
+				        shadow:             false,
+				        iconsize:           [9, 9],
+				        shadowsize:         false,
+				        iconanchor:         [4, 5],
+				        infowindowanchor:   [4, 5]
+				    }
+				});
 			});
 			//alert("borrando y actualizando: "+$.jardines.length);
 			$.gmap2.clearOverlays();
