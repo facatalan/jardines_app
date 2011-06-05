@@ -175,7 +175,6 @@
 			}
 		});
 		
-		
 	}
 	
 	$.fn.actualizarMapa=function() {
