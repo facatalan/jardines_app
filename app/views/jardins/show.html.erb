@@ -1,89 +1,58 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Nombre:</b>
-  <%= @jardin.nombre %>
-</p>
-
-<p>
-  <b>Direccion:</b>
-  <%= @jardin.direccion %>
-</p>
-
-<p>
-  <b>Telefono:</b>
-  <%= @jardin.telefono %>
-</p>
-
-<p>
-  <b>Web:</b>
-  <%= @jardin.web %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @jardin.email %>
-</p>
-
-<p>
-  <b>Capacidad:</b>
-  <%= @jardin.capacidad %>
-</p>
-
-<p>
-  <b>Camaras:</b>
-  <%= @jardin.camaras %>
-</p>
-
-<p>
-  <b>Ninos x tia:</b>
-  <%= @jardin.ninos_x_tia %>
-</p>
-
-<p>
-  <b>Matricula:</b>
-  <%= @jardin.matricula %>
-</p>
-
-<p>
-  <b>Mensualidad:</b>
-  <%= @jardin.mensualidad %>
-</p>
-
-<p>
-  <b>Sistema educativo:</b>
-  <%= @jardin.sistema_educativo %>
-</p>
-
-<p>
-  <b>Edad entrada:</b>
-  <%= @jardin.edad_entrada %>
-</p>
-
-<p>
-  <b>Edad salida:</b>
-  <%= @jardin.edad_salida %>
-</p>
-
-<p>
-  <b>Horario:</b>
-  <%= @jardin.horario %>
-</p>
-
-<p>
-  <b>Vacantes:</b>
-  <%= @jardin.vacantes %>
-</p>
-
-<p>
-  <b>Latitud:</b>
-  <%= @jardin.latitud %>
-</p>
-
-<p>
-  <b>Longitud:</b>
-  <%= @jardin.longitud %>
-</p>
+<table>
+  <tr>
+    <th>Nombre:</th><td><%= @jardin.nombre %></td>
+  </tr>
+  <tr>
+    <th>Direccion:</th><td><%= @jardin.direccion %></td>
+  </tr>
+  <tr>
+    <th>Latitud:</th><td><%= @jardin.latitud %></td>
+  </tr>
+  <tr>
+    <th>Longitud:</th><td><%= @jardin.longitud %></td>
+  </tr>
+  <tr>
+    <th>Telefono:</th><td><%= @jardin.telefono %></td>
+  </tr>
+  <tr>
+    <th>Web:</th><td><%= @jardin.web %></td>
+  </tr>
+  <tr>
+    <th>Email:</th><td><%= @jardin.email %></td>
+  </tr>
+  <tr>
+    <th>Capacidad:</th><td><%= @jardin.capacidad %></td>
+  </tr>
+  <tr>
+    <th>Camaras:</th><td><%= @jardin.camaras %></td>
+  </tr>
+  <tr>
+    <th>Ninos x tia:</th><td><%= @jardin.ninos_x_tia %></td>
+  </tr>
+  <tr>
+    <th>Matricula:</th><td><%= @jardin.matricula %></td>
+  </tr>
+  <tr>
+    <th>Mensualidad:</th><td><%= @jardin.mensualidad %></td>
+  </tr>
+  <tr>
+    <th>Sistema educativo:</th><td><%= @jardin.sistema_educativo %></td>
+  </tr>
+  <tr>
+    <th>Edad entrada:</th><td><%= @jardin.edad_entrada %></td>
+  </tr>
+  <tr>
+    <th>Edad salida:</th><td><%= @jardin.edad_salida %></td>
+  </tr>
+  <tr>
+    <th>Horario:</th><td><%= @jardin.horario %></td>
+  </tr>
+  <tr>
+    <th>Vacantes:</th><td><%= @jardin.vacantes %></td>
+  </tr>
+</table>
 
 
 <%= link_to 'Edit', edit_jardin_path(@jardin) %> |

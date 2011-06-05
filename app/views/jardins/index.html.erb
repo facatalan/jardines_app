@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Id</th>
     <th>Nombre</th>
     <th>Direccion</th>
     <th>Latitud</th>
@@ -26,6 +27,7 @@
 
 <% @jardins.each do |jardin| %>
   <tr>
+    <td><%= jardin.id %></td>
     <td><%= jardin.nombre %></td>
     <td><%= jardin.direccion %></td>
     <td><%= jardin.latitud %></td>

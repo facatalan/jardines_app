@@ -11,74 +11,59 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
+<table>
+  <tr><th>
+    <%= f.label :nombre %></th><td><%= f.text_field :nombre %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :direccion %></th><td><%= f.text_field :direccion %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :latitud %></th><td><%= f.text_field :latitud %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :longitud %></th><td><%= f.text_field :longitud %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :telefono %></th><td><%= f.text_field :telefono %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :web %></th><td><%= f.text_field :web %>
   </div>
-  <div class="field">
-    <%= f.label :direccion %><br />
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :latitud %><br />
-    <%= f.text_field :latitud %>
-  </div>
-  <div class="field">
-    <%= f.label :longitud %><br />
-    <%= f.text_field :longitud %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br />
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :web %><br />
-    <%= f.text_field :web %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :capacidad %><br />
-    <%= f.text_field :capacidad %>
-  </div>
-  <div class="field">
-    <%= f.label :camaras %><br />
-    <%= f.text_field :camaras %>
-  </div>
-  <div class="field">
-    <%= f.label :ninos_x_tia %><br />
-    <%= f.text_field :ninos_x_tia %>
-  </div>
-  <div class="field">
-    <%= f.label :matricula %><br />
-    <%= f.text_field :matricula %>
-  </div>
-  <div class="field">
-    <%= f.label :mensualidad %><br />
-    <%= f.text_field :mensualidad %>
-  </div>
-  <div class="field">
-    <%= f.label :sistema_educativo %><br />
-    <%= f.text_field :sistema_educativo %>
-  </div>
-  <div class="field">
-    <%= f.label :edad_entrada %><br />
-    <%= f.text_field :edad_entrada %>
-  </div>
-  <div class="field">
-    <%= f.label :edad_salida %><br />
-    <%= f.text_field :edad_salida %>
-  </div>
-  <div class="field">
-    <%= f.label :horario %><br />
-    <%= f.text_field :horario %>
-  </div>
-  <div class="field">
-    <%= f.label :vacantes %><br />
-    <%= f.text_field :vacantes %>
-  </div>
+  <tr><th>
+    <%= f.label :email %></th><td><%= f.text_field :email %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :capacidad %></th><td><%= f.text_field :capacidad %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :camaras %></th><td><%= f.text_field :camaras %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :ninos_x_tia %></th><td><%= f.text_field :ninos_x_tia %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :matricula %></th><td><%= f.text_field :matricula %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :mensualidad %></th><td><%= f.text_field :mensualidad %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :sistema_educativo %></th><td><%= f.text_field :sistema_educativo %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :edad_entrada %></th><td><%= f.text_field :edad_entrada %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :edad_salida %></th><td><%= f.text_field :edad_salida %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :horario %></th><td><%= f.text_field :horario %>
+  </td></tr>
+  <tr><th>
+    <%= f.label :vacantes %></th><td><%= f.text_field :vacantes %>
+  </td></tr>
+</table>
   <div class="actions">
     <%= f.submit %>
   </div>

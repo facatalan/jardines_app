@@ -6,6 +6,15 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
+table{
+	border: 1px solid;
+}
+th{
+	background-color:#ddd;
+}
+td{
+	border-bottom:1px solid #ddd;
+}	
 pre {
   background-color: #eee;
   padding: 10px;
