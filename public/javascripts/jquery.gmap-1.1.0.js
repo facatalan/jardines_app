@@ -185,8 +185,34 @@
 	}
 		
 	$.comparar=function(id){
-		$("#tablaComparacion").append("<tr id=\"jardin"+id+"\"><td>Nombre"+id+"</td><td> <a href=\"#\" onClick=\"$.deleteComparar('jardin"+id+"');return true\">X</a></td><td>Dirección"+id+"</td></tr>");
-		$("#no_hay_jardines_para_comparar").hide();
+		$.getJSON('/jardins/'+id+'.json', function(data) {
+			$.each(data, function(key,val) {
+				var jardinAux="<tr id=\"jardin"+id+"\" >"+
+					"<td>"+val.nombre+"</td>"+
+                    "<td><a href=\"/jardins/"+id+"\" target=\"_blank\">detalle</a><br/><a href=\"#\" onClick=\"$.deleteComparar('jardin"+id+"');return true\">X</a></td>"+
+                    "<td >"+val.direccion+"</td>"+
+                    "<td nowrap=\"nowrap\">"+val.telefono+"</td>"+
+                    "<td>"+val.web+"</td>"+
+                    "<td>"+val.email+"</td>"+
+                    "<td>"+val.capacidad+"</td>"+
+                    "<td>"+val.webcams+"</td>"+
+                    "<td>"+val.niños_x_parvularias+"</td>"+
+                    "<td>"+val.parvularias+"</td>"+
+                    "<td>"+val.auxiliares+"</td>"+
+                    "<td>"+val.matricula+"</td>"+
+                    "<td>"+val.mensualidad+"</td>"+
+                    "<td>"+val.sistema_educativo+"</td>"+
+                    "<td>"+val.edad_entrada+"</td>"+
+                    "<td>"+val.edad_salida+"</td>"+
+                    "<td>"+val.horario_inicio+"</td>"+
+                    "<td>"+val.horario_termino+"</td>"+
+                    "<td>"+val.vacantes+"</td>"+
+					"</tr>";
+				$("#tablaComparacion").append(jardinAux);
+				$("#no_hay_jardines_para_comparar").hide();
+			});
+		});
+	
 	}
 
 	$.fn.actualizarMapa=function() {

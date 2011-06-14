@@ -24,12 +24,14 @@ class JardinsController < ApplicationController
 
   # GET /jardins/1
   # GET /jardins/1.xml
+  # GET /jardins/1.json
   def show
     @jardin = Jardin.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @jardin }
+      format.json { render :json => @jardin }
     end
   end
 
