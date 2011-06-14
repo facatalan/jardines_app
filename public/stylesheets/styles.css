@@ -1,5 +1,103 @@
+body{
+	font-family: 'Helvetica Neue',Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+	color:#3A2C2D;
+}
+
+#tablaComparacion{
+	border: 1px solid #3A2C2D;
+	border-collapse:collapse;
+	font-size:14px;
+	
+}
+th{
+}
+
+#tablaComparacion td{
+	border-bottom:1px dotted #9B8377;
+}
+
+#tablaComparacion th{
+	font-weight:200;
+	font-size:16px;
+	padding-left:8px;
+	padding-right:8px;
+	background-color:#3A2C2D;
+	color:#EBE2BF;
+	font-weight:200;
+	border: 1px solid #3A2C2D;
+	white-space:nowrap;
+}
+
 .gmap_marker {
 	width:300px;
 	font-family:Verdana, Geneva, sans-serif ;
 	font-size:10px
+}
+
+#wrapper{
+	margin: 0px auto;
+	text-align:left;
+	background-image:url(../images/bg-body.gif);
+	padding:0px;
+	width:900px
+}
+
+#header{
+	width:900px;
+	height:300px;
+	background-image:url(../images/header2.png);
+}
+
+
+#filtros{
+	margin:10px;
+	float:left;
+	width: 180px;
+	height:500px;
+}
+
+#map_canvas{
+	float:center;
+	width:534px;
+	height:534px;
+	margin:8px;
+}
+#map_border{
+	float:left;
+	width:550px;
+	height:550px;
+	background-image:url(../images/mapBorderWeb.png)
+}
+
+li{
+	padding-left:0px;
+	margin-left: -20px;
+	line-height:18px;
+}
+
+#mensajes{
+	float:left;
+	font-size:12px;
+	width: 131px;
+	height:530px;
+	padding:5px;
+	padding-top:15px;
+	padding-left:10px;
+	margin-left:2px;
+	color:#EBE2BF;
+	background-image:url(../images/mensajes.gif);
+}
+
+#comparacion{
+	clear:both;
+	width: 860px;
+	overflow:auto;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+h2{
+	font-weight:200;
+	margin-top:0px;
+	color:#6B9974;
 }

@@ -27,9 +27,115 @@
 		$("#map_canvas").actualizarMapa();
 
 	});
+
 	</script>
   </head>
   <body>
-	  <div id="map_canvas" style="width:700px; height:500px"></div>
+  	<div id="wrapper">
+        <div id="header"></div>
+        <div id="filtros">
+          <h2>Búsqueda:</h2>
+          <form id="filtroBusqueda" name="filtroBusqueda" method="post" action="#">
+          <table>
+          	<tr>
+            	<td>
+                	<label for="region">Región: </label>
+				</td>
+                <td>
+                	<select name="Región">
+                      <option value="RM">RM</option>
+                      <option value="V">V</option>
+                    </select>
+                </td>
+            </tr>
+          	<tr>
+           	  <td>
+                	<label for="comuna">Comuna: </label>
+              </td>
+              <td>
+                	<select name="comuna" id="comuna" onchange="$.cambiarComuna();return true">
+                      <option value="Todas" selected="selected">Todas</option>
+                      <option value="Las Condes">Las Condes</option>
+                      <option value="Ñuñoa">Ñuñoa</option>
+                      <option value="Santiago">Santiago</option>
+                      <option value="Providencia">Providencia</option>
+            		</select>
+              </td>
+            </tr>
+          	<tr>
+            	<td colspan="2">Horarios jardines:</td>
+            </tr>
+          	<tr>
+            	<td>&nbsp;&nbsp;&nbsp;&nbsp;Inicio:</td>
+                <td>
+                	<select name="Inicio">
+                        <option value="6">6:00 am</option>
+                        <option value="7">7:00 am</option>
+                        <option value="8">8:00 am</option>
+                        <option value="9">9:00 am</option>
+                    </select>
+              </td>
+            </tr>
+          	<tr>
+            	<td>&nbsp;&nbsp;&nbsp;&nbsp;Término:</td>
+                <td>
+                	<select name="Termino">
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                    </select>
+              </td>
+            </tr>
+          </table>
+          <br />
+          </form>
+          <p>&nbsp;</p>
+    </div>
+        <div id="map_border"><a name="mapa"></a><div id="map_canvas"></div></div>
+        <div id="mensajes">
+          <p>Mostrando:</p>
+          <ul>
+            <li><strong>485</strong> jardines</li>
+            <li>En <strong>38</strong> comunas</li>
+            <li>Entre <strong>10</strong> y <strong>150</strong> niños de capacidad</li>
+            <li>Desde <strong>1</strong> hasta <strong>10</strong> parvularias</li>
+            <li>Desde <strong>1</strong> hasta <strong>10</strong> auxiliares de parvulos</li>
+            <li>Con <strong>6</strong> sistemas educativos distintos</li>
+            <li>Desde <strong>0</strong> a <strong>10</strong> webcams</li>
+            <li><strong>Con y sin</strong> transporte escolar empadronado</li>
+          </ul>
+        </div>
+        <p>&nbsp;</p>
+        <div id="comparacion">
+          <h2>Comparación</h2>
+            <table id="tablaComparacion">
+                <tr>
+                    <th>Nombre</th>
+                    <th></th>
+                    <th>Dirección</th>
+                    <th>Telefono</th>
+                    <th>Web</th>
+                    <th>Email</th>
+                    <th>Capacidad</th>
+                    <th>Camaras</th>
+                    <th>Ninos x tia</th>
+                    <th>Matricula</th>
+                    <th>Mensualidad</th>
+                    <th>Sistema educativo</th>
+                    <th>Edad entrada</th>
+                    <th>Edad salida</th>
+                    <th>Horario</th>
+                    <th>Vacantes</th>
+              </tr>
+          </table>
+      </div> 
+      <div id="footer">
+        <p style="text-align:center; font-size:10px;">www.wxpid.com<br/>&nbsp;</p>
+      </div>
+  </div>
   </body>
 </html>

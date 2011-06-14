@@ -176,7 +176,18 @@
 		});
 		
 	}
-	
+
+	$.deleteComparar=function(jardinId){
+		var tr=$("#"+jardinId);
+		$.each(tr,function(key,val){
+			val.parentNode.removeChild(val);			
+		});
+	}
+		
+	$.comparar=function(id){
+		$("#tablaComparacion").append("<tr id=\"jardin"+id+"\"><td>Nombre"+id+"</td><td> <a href=\"#\" onClick=\"$.deleteComparar('jardin"+id+"');return true\">X</a></td><td>Dirección"+id+"</td></tr>");
+	}
+
 	$.fn.actualizarMapa=function() {
 		//alert("actual");
 		$.jardines = [];
@@ -185,7 +196,7 @@
 		var NE=mapBounds.getNorthEast();
 		$.getJSON('/jardins/mapSearch?SWLat='+SW.lat()+'&NELat='+NE.lat()+'&SWLng='+SW.lng()+'&NELng='+NE.lng(), function(data) {
 			$.each(data, function(key,val) {
-			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: "<b>Nombre: </b>"+val.jardin.nombre+"<br/><b>Dirección: </b>"+val.jardin.direccion, 
+			    $.jardines.push({ latitude: val.jardin.latitud , longitude: val.jardin.longitud, html: "<b>Nombre: </b>"+val.jardin.nombre+"<br/><b>Dirección: </b>"+val.jardin.direccion+"<br/><br/><a href=\"#mapa\" onClick=\"$.comparar('"+val.jardin.id+"');return true\">comparar</a>", 
 				icon:
 				    {
 				        image:              "images/puntoJardin.png",
@@ -202,6 +213,38 @@
 			$("#map_canvas").actualizarMarkers({markers: $.jardines})
 		});
   	}
+	
+	$.cambiarComuna=function(){
+		//Leer posición del formulario
+		//Santiago
+		var comunas= new Array();
+		var comunaAux= new Array();
+		comunaAux["centro"]=new GLatLng(-33.451782,-70.656509);
+		comunaAux["zoom"]=13;
+		comunas["Santiago"]=comunaAux;
+		//Providencia
+		var comunaAux= new Array();
+		comunaAux["centro"]=new GLatLng(-33.43445,-70.612221);
+		comunaAux["zoom"]=14;
+		comunas["Providencia"]=comunaAux;
+		//Ñuñoa
+		var comunaAux= new Array();
+		comunaAux["centro"]=new GLatLng(-33.45973,-70.600204);
+		comunaAux["zoom"]=14;
+		comunas["Ñuñoa"]=comunaAux;
+		//Las Condes
+		var comunaAux= new Array();
+		comunaAux["centro"]=new GLatLng(-33.412099,-70.56);
+		comunaAux["zoom"]=13;
+		comunas["Las Condes"]=comunaAux;
+
+		//Setear nueva posición y zoom del mapa
+		$.gmap2.setCenter(comunas[$("#comuna")[0].value]["centro"],comunas[$("#comuna")[0].value]["zoom"]);
+		//Actualizar mapa
+		
+		//$("#map_canvas").actualizarMapa();
+		
+	}
 	
 	
 	$.fn.actualizarMarkers= function(options){
