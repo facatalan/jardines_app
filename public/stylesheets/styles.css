@@ -54,6 +54,7 @@ th{
 	float:left;
 	width: 180px;
 	height:500px;
+	font-size:12px;
 }
 
 #map_canvas{
@@ -100,4 +101,5 @@ h2{
 	font-weight:200;
 	margin-top:0px;
 	color:#6B9974;
+	font-size:24px;
 }

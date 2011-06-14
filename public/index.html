@@ -63,7 +63,21 @@
               </td>
             </tr>
           	<tr>
-            	<td colspan="2">Horarios jardines:</td>
+           	  <td>
+                	Dependencia
+              </td>
+              <td>
+                	<select name="comuna" id="comuna" onchange="$.cambiarComuna();return true">
+                	  <option value="Todos">Todos</option>
+                	  <option value="Privados">Privados</option>
+                	  <option value="Junji">Junji</option>
+                	  <option value="Integra">Integra</option>
+                	  <option value="Municipal">Municipal</option>
+                    </select>
+              </td>
+            </tr>
+          	<tr>
+            	<td colspan="2">Horario atención:</td>
             </tr>
           	<tr>
             	<td>&nbsp;&nbsp;&nbsp;&nbsp;Inicio:</td>
@@ -89,6 +103,48 @@
                         <option value="21">21:00</option>
                     </select>
               </td>
+            </tr>
+            <tr>
+                <td>Web Cams:</td>
+                <td><select name="webcams">
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+            	</td>
+            </tr>
+            <tr>
+                <td>Mensualidad:
+            	</td>
+                <td><select name="Mensualidad">
+                  <option value="0-9">$0-$9 mil</option>
+                  <option value="10-49">$10-$49 mil</option>
+                  <option value="50-99">$50-$99 mil</option>
+                  <option value="100-149">$100-$149 mil</option>
+                  <option value="150-199">$150-$199 mil</option>
+                  <option value="200">Sobre $200 mil</option>
+                </select>
+            	</td>
+            </tr>
+            <tr>
+                <td>Sistema educativo:</td>
+                <td><select name="Sistema">
+                  <option value="tradicional">Tradicional</option>
+                  <option value="integral">Integral</option>
+                  <option value="montessori">Montessori</option>
+                  <option value="high scope">High scope</option>
+                  <option value="personalizado">Personalizado</option>
+                  <option value="waldorf">Waldorf</option>
+                  <option value="otro">Otro</option>
+                </select>
+            	</td>
+            </tr>
+            <tr>
+                <td>Vacantes:</td>
+                <td><select name="Vacantes">
+                  <option value="Con vacantes">RM</option>
+                  <option value="Todos">Todos</option>
+                </select>
+            	</td>
             </tr>
           </table>
           <br />
@@ -121,13 +177,15 @@
                     <th>Web</th>
                     <th>Email</th>
                     <th>Capacidad</th>
-                    <th>Camaras</th>
-                    <th>Ninos x tia</th>
+                    <th>Web Cams</th>
+                    <th>Ninos x parvularias/aux</th>
+                    <th>Parvularias</th>
+                    <th>Auxiliares</th>
                     <th>Matricula</th>
                     <th>Mensualidad</th>
                     <th>Sistema educativo</th>
-                    <th>Edad entrada</th>
-                    <th>Edad salida</th>
+                    <th>Edad mínima</th>
+                    <th>Edad máxima</th>
                     <th>Horario</th>
                     <th>Vacantes</th>
               </tr>
