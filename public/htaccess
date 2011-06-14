@@ -1,0 +1,4 @@
+AuthUserFile /Users/facatalan/Sites/jardines_app/.ht9hs8
+AuthType Basic
+AuthName "My Secret Folder"
+Require valid-user
