@@ -4,7 +4,7 @@ body{
 }
 
 #tablaComparacion{
-	border: 1px solid #3A2C2D;
+	border: 1px solid #DE564B;
 	border-collapse:collapse;
 	font-size:14px;
 	
@@ -13,7 +13,7 @@ th{
 }
 
 #tablaComparacion td{
-	border-bottom:1px dotted #9B8377;
+	border-bottom:1px dotted #DE564B;
 }
 
 #tablaComparacion th{
@@ -21,10 +21,10 @@ th{
 	font-size:16px;
 	padding-left:8px;
 	padding-right:8px;
-	background-color:#3A2C2D;
+	background-color:#DE564B;
 	color:#EBE2BF;
 	font-weight:200;
-	border: 1px solid #3A2C2D;
+	border: 1px solid #DE564B;
 	white-space:nowrap;
 }
 
@@ -38,14 +38,16 @@ th{
 	margin: 0px auto;
 	text-align:left;
 	background-image:url(../images/bg-body.gif);
-	padding:0px;
-	width:900px
+	padding-left:10px;
+	padding-right:10px;
+	width:880px;
 }
 
 #header{
 	width:900px;
 	height:300px;
 	background-image:url(../images/header2.png);
+	margin-left: -10px;
 }
 
 
@@ -58,16 +60,16 @@ th{
 }
 
 #map_canvas{
-	float:center;
+	float:left;
 	width:534px;
 	height:534px;
 	margin:8px;
 }
 #map_border{
 	float:left;
-	width:550px;
+	width:680px;
 	height:550px;
-	background-image:url(../images/mapBorderWeb.png)
+	background-image:url(../images/mapBorder2.png)
 }
 
 li{
@@ -79,14 +81,11 @@ li{
 #mensajes{
 	float:left;
 	font-size:12px;
-	width: 131px;
-	height:530px;
-	padding:5px;
+	width: 100px;
+	height:500px;
 	padding-top:15px;
-	padding-left:10px;
 	margin-left:2px;
 	color:#EBE2BF;
-	background-image:url(../images/mensajes.gif);
 }
 
 #comparacion{
