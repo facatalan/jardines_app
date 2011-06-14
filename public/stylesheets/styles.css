@@ -52,9 +52,8 @@ th{
 
 
 #filtros{
-	margin:10px;
 	float:left;
-	width: 180px;
+	width: 200px;
 	height:500px;
 	font-size:12px;
 }
@@ -90,14 +89,12 @@ li{
 
 #comparacion{
 	clear:both;
-	width: 860px;
+	width: 880px;
 	overflow:auto;
-	margin-left:20px;
-	margin-right:20px;
 }
 
 h2{
-	font-weight:200;
+	font-weight:400;
 	margin-top:0px;
 	color:#6B9974;
 	font-size:24px;

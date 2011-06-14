@@ -42,7 +42,7 @@
                 	<label for="region">Región: </label>
 				</td>
                 <td>
-                	<select name="Región">
+                	<select name="Región" disabled="disabled">
                       <option value="RM">RM</option>
                       <option value="V">V</option>
                     </select>
@@ -67,7 +67,7 @@
                 	Dependencia
               </td>
               <td>
-                	<select name="comuna" id="comuna" onchange="$.cambiarComuna();return true">
+                	<select name="comuna" id="comuna" onchange="$.cambiarComuna();return true" disabled="disabled">
                 	  <option value="Todos">Todos</option>
                 	  <option value="Privados">Privados</option>
                 	  <option value="Junji">Junji</option>
@@ -82,7 +82,7 @@
           	<tr>
             	<td>&nbsp;&nbsp;&nbsp;&nbsp;Inicio:</td>
                 <td>
-                	<select name="Inicio">
+                	<select name="Inicio" disabled="disabled">
                         <option value="6">6:00 am</option>
                         <option value="7">7:00 am</option>
                         <option value="8">8:00 am</option>
@@ -93,7 +93,7 @@
           	<tr>
             	<td>&nbsp;&nbsp;&nbsp;&nbsp;Término:</td>
                 <td>
-                	<select name="Termino">
+                	<select name="Termino" disabled="disabled">
                         <option value="15">15:00</option>
                         <option value="16">16:00</option>
                         <option value="17">17:00</option>
@@ -106,7 +106,7 @@
             </tr>
             <tr>
                 <td>Web Cams:</td>
-                <td><select name="webcams">
+                <td><select name="webcams" disabled="disabled">
                   <option value="si">Sí</option>
                   <option value="no">No</option>
                 </select>
@@ -115,7 +115,7 @@
             <tr>
                 <td>Mensualidad:
             	</td>
-                <td><select name="Mensualidad">
+                <td><select name="Mensualidad" disabled="disabled">
                   <option value="0-9">$0-$9 mil</option>
                   <option value="10-49">$10-$49 mil</option>
                   <option value="50-99">$50-$99 mil</option>
@@ -127,7 +127,7 @@
             </tr>
             <tr>
                 <td>Sistema educativo:</td>
-                <td><select name="Sistema">
+                <td><select name="Sistema" disabled="disabled">
                   <option value="tradicional">Tradicional</option>
                   <option value="integral">Integral</option>
                   <option value="montessori">Montessori</option>
@@ -140,7 +140,7 @@
             </tr>
             <tr>
                 <td>Vacantes:</td>
-                <td><select name="Vacantes">
+                <td><select name="Vacantes" disabled="disabled">
                   <option value="Con vacantes">RM</option>
                   <option value="Todos">Todos</option>
                 </select>
@@ -155,7 +155,7 @@
             <a name="mapa"></a>
             <div id="map_canvas"></div>
             <div id="mensajes">
-              <p>Mostrando:</p>
+              <p>Desplegando:</p>
               <ul>
                 <li><strong>485</strong> jardines</li>
                 <li>En <strong>38</strong> comunas</li>
@@ -169,8 +169,8 @@
             </div>
         </div>
         <p>&nbsp;</p>
+        <h2>Comparación</h2>
         <div id="comparacion">
-          <h2>Comparación</h2>
             <table id="tablaComparacion">
                 <tr>
                     <th>Nombre</th>
@@ -193,6 +193,7 @@
                     <th>Vacantes</th>
               </tr>
           </table>
+          <div id="no_hay_jardines_para_comparar" style="text-align:center"><br/>No hay jardines para comparar<br/>&nbsp;</div>
       </div> 
       <div id="footer">
         <p style="text-align:center; font-size:10px;">www.wxpid.com<br/>&nbsp;</p>

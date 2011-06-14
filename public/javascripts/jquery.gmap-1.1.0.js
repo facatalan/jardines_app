@@ -186,6 +186,7 @@
 		
 	$.comparar=function(id){
 		$("#tablaComparacion").append("<tr id=\"jardin"+id+"\"><td>Nombre"+id+"</td><td> <a href=\"#\" onClick=\"$.deleteComparar('jardin"+id+"');return true\">X</a></td><td>Dirección"+id+"</td></tr>");
+		$("#no_hay_jardines_para_comparar").hide();
 	}
 
 	$.fn.actualizarMapa=function() {
